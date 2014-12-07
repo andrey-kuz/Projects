@@ -2,14 +2,17 @@ html{
 	height: 100%;}
 body{
 	background-color:#F9F7F8;
-	font-family: sans-serif;
+	font-family:Arial;
 	margin:0;
+
 }
 .general{
 	width:1000px;
 	margin:0 auto;
 }
-.container{background:url(images/r0_02.png) repeat-x;
+.container{
+	background:url(images/r0_02.png) repeat;
+	overflow: hidden;
 }
 .left-sidebar{width:225px;
 	float:left;
@@ -17,70 +20,90 @@ body{
 	padding:10px;
 	margin:0;
 }
-.menu-sidebar .list-sidebar{text-align:right;
-list-style-type:none;
-font-size:20px;
-font-weight:700; 
+.menu-sidebar .list-sidebar{
+	text-align:right;
+	list-style-type:none;
+	font-size:20px;
+	font-weight:700; 
 }
-.sidebar-rigth{width:250px;
+.sidebar-rigth{
+	width:250px;
 	float:right;
 	padding-top: 20px;
 }
-.content{margin:0px 300px 0 230px;
+.content{
+	margin:0px 300px 0 230px;
 	width:500px;
 	padding-top: 8px;
 
 }
-.header-basic{background: url(images/background-top-images.png) repeat-x;
-	height:128px;
+.header-page{
+	position: relative;
+	background: url(images/header.jpg) no-repeat;
+	height: 400px;
+}
+.header-page .expertise-image {
+	position: absolute;
+	top: 308px;
+	right: 0;
 }
 .text-header{
-	padding-top:20px;
-	font-size:20px;
+	padding-top:27px;
+	font-size:18px;
 	color:#900202;
 	text-align:center;
+}
+.tel{
+	padding-top:10px;
+	display: block;
+	font-size: 30px;
 }
 .peripheral-header{background-color:#9f0000;
     height:145px;
 }
-.peripheral-images{position:relative;
+.peripheral-images{
+	position:relative;
 	margin:15px 300px 5px 480px;
 }
-footer{clear:both;
-	height:100px;
-	background: url(images/raira10_12.png) repeat-x;
+.main-menu {
+	position: absolute;
+	left:358px;
+	top:337px;
+	margin:0;
+	width: 386px;
 }
-.menu_butterfly .butterfly{
-	list-style-type:none;
+.main-menu .list{
+	padding:0px;
+	margin:0px;
 }
-.butterfly_img{
-	padding:8px;
-}
-.menu{
-	margin:0 0 0 320px;
-	height: 50px;
-	padding-top:80px;
-
-}
-.menu .list-item {
+ .main-menu .list-item {
 	display: inline-block;
 	padding: 4px 20px;
 	cursor: pointer;
 }
-a:link{color:#9f0000;}
-a:visited{color:#9f0000;
+a:link{
+	color:#9f0000;
 }
-.images_1{position: absolute;
+a:visited{
+	color:#9f0000;
+}
+.images_1{
+	position: absolute;
 	top:0px;
     left:176px;
 }
-.strahovca{position:absolute;
-			top:300px;
-			left:640px;
+.strahovca {
+	position:absolute;
+	top:300px;
+	left:640px;
 }
-.lupa{position:absolute;
-       top:308px;
-       left:913px; }
-.footer-text{float:left;
-height:100px;
-width:200px; }
+.footer-text {
+	margin:0;
+	float:left;
+	height:100px;
+	width:200px;
+}
+footer{
+	background:#8b0101;
+	overflow: hidden;
+}
