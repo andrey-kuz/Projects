@@ -2,80 +2,132 @@ html{
 	height:100%;
 }
 body{
-	background: url(images/index.png) repeat;
+
+	background-image: url(images/index.png);
+	background-color: #313131;
 	font-size:13px;
-	font-family: Century Gothic Regular;
+	font-family: Century Gothic;
 	margin: 0px;
+
 }
-.cinema-ruletca{
-	background: url( images/header-img.png);
-	height:126px;
-	margin:auto;
-	width:1360px;
+
+.page-header {
+	background: url( images/header.png) repeat-x;
+	height: 128px;
+	margin: auto;
 	position: relative;
 }
-.ruletca{
-	position:relative;
+
+.header-logo {
+	margin: auto;
+	width:1360px;
+}
+
+.logo {
+	margin-top: 10px;
+	margin-left: 185px;
+}
+
+.main-content {
+	margin: auto;
+	width:1360px;
+}
+
+.ruletka {
+	position:absolute;
 	top:70px;
-	left:500px;
+	left:630px;
 }
-.left-mein-info{ 
+
+.left-film-info { 
 	background: url( images/fon3.png)  repeat;
-	height:512px;
-	border:0px solid yellow;
+	height: 510px;
+	width: 485px;
+	float: left;
+	border-radius: 20px;
+	margin: 100px 10px 0px 185px;
+
+}
+
+.right-film-info {
+	background: url(images/fon3.png) repeat;
+	height:510px;
+	width: 485px;
+	float: right;
 	border-radius:20px;
-	float:left;
-	width:520px;
-	margin:100px 11px 50px 140px;
-
+	margin: 100px 185px 0px 10px;
 }
+
 .apolon{
-	padding:10px 15px;
+	padding: 10px 15px;
 }
-.text-left-bar{font-size:16px;
-color:#ffffff;}
 
-.text-left-ba{
-	font-family:Italic;
+.left-film-info-right-text {
+	float: right;
+	width: 260px;
+}
+
+.text-left-bar {
+	font-size:16px;
+    color:#ffffff;
+}
+
+.text-left-bar-title {
 	font-size:12px;
 	color:#727272;
 }
-.text-left-bari{
-	
+
+.text-left-bar-title1{
+	display: block;
 	font-size:14px;
 	color:#727272;
 }
-.list{
+
+.list {
 	padding-top:10px; 
 	list-style-type:none;
-	padding-left:15px;
+	padding-left: 0px;
+	margin-right: 15px;
 }
+
+.list1 {
+	padding-top:10px; 
+	list-style-type:none;
+	margin-right: 15px;
+	padding-left: 15px;
+}
+
 .list-text{
-	border-bottom:1px inset #3b3b3b;
-	font-family:Century Gothic Regular;
-	font-size:15px;
+	border-bottom: 1px inset #3b3b3b;
+	font-size:14px;
 	color:#939393;
 }
+
 li{
 	padding-bottom:7px;
 }
+
 .list-text-grey{
+	font-family: Georgia;
+	font-style: italic;
 	font-size:13px;
-	font-family:Italic;
 	color:#727272;
-	padding-left:5px;
+	padding-left: 5px;
 
 }
+
 .bar{float:right;
 	width:300px;
 	margin: 0;
 }
+
 .pley{
-	font-size:18px;
+	font-size:15px;
+	font-weight:normal;
 	color:#ffffff;
 	padding-left:15px;
-
 }
+
 .spoler{
 	font-size: 16px;
 	color:#ffffff;
@@ -83,39 +135,32 @@ li{
 .img_bar{padding:0 12px 0px 13px;}
 .ee{padding-right:17px; }
 
-.info{
-	background: url(images/fon3.png) repeat;
-	height:512px;
-	border:0px solid yellow;
-	border-radius:20px;
-	float:right;
-	width:520px;
-	margin:100px 140px 50px 0px;
-}
 .text-info{
 	font-size:15px;
 	color:#727272;
 	padding:0 5px 0 13px; 
 }
+
 .info-img{
-	padding:0 5px 0px 15px;
+	padding: 0px 0px 0px 6px;
 }
+
 .info-soc_seti{
-	padding-left:120px;
+	padding-left: 90px;
 }
-.treler{
+.kadri {
 	font-size:17px;
 	color:#ffffff;
 	overflow: hidden;
 	margin: 0;
-	position:relative;
-	left:140px;
+	position: relative;
+	left:185px;
 	top:20px;
 	width:240px;
-	padding:0px 0px 0px 5px;
+	padding: 0px 0px 0px 5px;
 	border-radius:10px 10px 0px 0px;
 	background:url(images/fon3.png) repeat;
-	border:0px solid yellow;
+	border: 0px solid yellow;
 }
 .lenta{
 	padding:10px 10px 0px 10px;
@@ -124,21 +169,21 @@ li{
 	background:url(images/fon3.png) repeat;
 	padding: 5px;
 	border:0px solid yellow;
-	width:1050px;
+	width:980px;
 	height: 150px;
-	overflow:hidden;
-	border-radius:0px 10px 10px 10px;
-	margin: 20px 10px 10px 140px;
+	overflow: hidden;
+	border-radius: 0px 10px 10px 10px;
+
+	margin: 20px 10px 10px 185px;
 }
 .sckreenshots-img{
 	padding:0 0 20px 6px;
 }
-.camera{
+
+.trailer-header{
 	font-size:17px;
+	font-weight: normal;
 	color:#ffffff;
-	position: relative;
-	top:29px;
-	left:138px;
 	border-radius: 10px 10px 0 0;
 	background: url(images/fon3.png) repeat;
 	width:170px;
@@ -150,25 +195,49 @@ li{
 }
 .video{
 	float:left;
+	width:580px;
+	height:345px;
+	margin:15px 10px 15px 185px;
+}
+
+.video-content {
 	background: url(images/fon3.png) repeat;
 	border:0px solid yellow;
 	border-radius:0 15px 15px 15px;
-	width:625px;
-	height:350px;
-	margin:15px 15px 15px 138px;
 }
+
 .cosmos{
 	padding:10px;
 }
-.comments{
-	margin:0px;
-	height:400px;
-	width: 500px;
-	float:left;
-	background:url(images/fon3.png) repeat;
-	border-radius: 0 10px 10px 10px;
-	border:0px solid ;
+
+.comments {
+	float: left;
+	width: 390px;
+	height:348px;
+	margin: 15px 185px 15px 10px;
 }
+
+.comments-content {
+	border:0px solid yellow;
+	border-radius:0 15px 15px 15px;
+	background:url(images/fon3.png) repeat;
+}
+
+.trailer {
+	float: left;
+	width: 300px;
+}
+
+.comments-header {
+	font-size:17px;
+	font-weight: normal;
+	color:#ffffff;
+	border-radius: 10px 10px 0 0;
+	background: url(images/fon3.png) repeat;
+	width:170px;
+	height:40px;
+}
+
 .coments_img{
-	padding:20px 0 0 0 ;
+	width: 370px;
 }
