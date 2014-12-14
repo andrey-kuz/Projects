@@ -1,0 +1,33 @@
+diff a/Project1/rehana.css b/Project1/rehana.css	(rejected hunks)
+@@ -97,13 +97,25 @@
+ 	top:300px;
+ 	left:640px;
+ }
+-.footer-text {
+-	margin:0;
++.footer_float-left {
+ 	float:left;
+-	height:100px;
+ 	width:200px;
++	padding:10px 0px 10px 20px;
++	margin: 0px;
++	
+ }
+-footer{
++footer {
++	font-size: 13px;
++	color:#fff;
+ 	background:#8b0101;
+ 	overflow: hidden;
+-}
+\ No newline at end of file
++}
++.footer_float-left2{
++	float:left;
++	width:280px;
++	padding: 10px 0px 10px 15px;
++	margin: 0px;
++}
++.footer-tel{
++	display:block;
++}

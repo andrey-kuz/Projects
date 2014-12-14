@@ -1,0 +1,78 @@
+html{
+	height:100%;
+}
+body{
+	background: url(images/index.png) repeat;
+	font-size:13px;
+	font-family: Century Gothic Regular;
+	margin: 0px;
+}
+.general{
+	margin:auto;
+	width:1260px;
+	position: relative;
+}
+.cinema-ruletca{
+	background: url( images/header-img.png);
+	height:126px;
+	margin: 0;
+}
+.ruletca{
+	position:relative;
+	top:70px;
+	left:500px;
+}
+.left-bar{
+	border:1px solid yellow;
+	border-radius:15px;
+	float:left;
+	width:520px;
+	margin:100px 11px 0 120px;
+}
+.apolon{
+	padding:10px 15px;
+}
+.text-left-bar{font-size:16px;
+color:#ffffff;}
+
+.text-left-ba{
+	font-family:Italic;
+	font-size:12px;
+	color:#727272;
+}
+.text-left-bari{
+	
+	font-size:14px;
+	color:#727272;
+}
+.list{
+	list-style-type:none;
+	padding-left:15px;
+}
+.list-text{
+	border-bottom:1px inset #3b3b3b;
+	font-family:Century Gothic Regular;
+	font-size:15px;
+	color:#939393;
+}
+li{
+	padding-bottom:7px;
+}
+.list-text-grey{
+	font-size:13px;
+	font-family:Italic;
+	color:#727272;
+	padding-left:5px;
+
+}
+.bar{float:right;
+	width:300px;
+	margin: 0;
+}
+h3{
+	font-size:18px;
+	color:#ffffff;
+	padding-left:15px;
+
+}
+.ee{padding-right:17px; }

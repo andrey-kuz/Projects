@@ -2,17 +2,14 @@ html{
 	height: 100%;}
 body{
 	background-color:#F9F7F8;
-	font-family:Arial;
+	font-family: sans-serif;
 	margin:0;
-
 }
 .general{
 	width:1000px;
 	margin:0 auto;
 }
-.container{
-	background:url(images/r0_02.png) repeat;
-	overflow: hidden;
+.container{background:url(images/r0_02.png) repeat-x;
 }
 .left-sidebar{width:225px;
 	float:left;
@@ -97,25 +94,13 @@ a:visited{
 	top:300px;
 	left:640px;
 }
-.footer_float-left {
+.footer-text {
+	margin:0;
 	float:left;
+	height:100px;
 	width:200px;
-	padding:10px 0px 10px 20px;
-	margin: 0px;
-	
 }
-footer {
-	font-size: 13px;
-	color:#fff;
+footer{
 	background:#8b0101;
 	overflow: hidden;
-}
-.footer_float-left2{
-	float:left;
-	width:280px;
-	padding: 10px 0px 10px 15px;
-	margin: 0px;
-}
-.footer-tel{
-	display:block;
 }
