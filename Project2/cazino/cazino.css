@@ -1,25 +1,33 @@
 html{
+	width: 100%;
 	height:100%;
 }
 
 body{
-	width: 1050px;
 	margin: auto;
 	background: url(images/yyyyx_03.png) repeat;
 	font-size:13px;
 	font-family:Century Gothic;	
 }
 
-.kinoruletca{
+.header-kinoruletca{
+	margin:0;
 	position: relative;
+	height: 117.5px;
+	background: url(images/xxx.png) repeat;
+	box-shadow: 0px 6px 0px 1px rgba(0, 0, 0, 0.15);
+
+}
+
+.kinoruletca{
+	margin: 0 auto;
 	width: 1050px;
 	background: url(images/xxx.png) repeat;
 	height: 117.5px;
-	box-shadow: 0px 20px 12px -14px #000;
 }
 
 .header-kinoruletca-img{
-	margin:10px 0 0 80px;
+	margin:13px 0 0 0px;
 
 }
 
@@ -35,7 +43,7 @@ body{
 }
 
 .consol{
-	margin: 10px 110px 0px 0px;
+	margin: 10px 10px 0px 0px;
 	float:right;
 }
 
@@ -45,6 +53,8 @@ body{
 }
 
 .ruletca{
+	text-decoration:none;
+	display: block;
 	background:url(images/fon3.png) repeat;
 	border-radius: 15px;
 	height:136px;
@@ -77,11 +87,16 @@ body{
 	padding-left:48px;
 }
 
+
+.content{
+	width: 1050px;
+	margin: auto;
+}
+
 .mein-info{
-	box-shadow: inset 0 0 2px 0.5px #000;
+	box-shadow: inset 0px 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(255, 255, 255, 0.15);
 	background:rgba(2, 2, 2, 0.15);
 	height:512px;
-	border:1px solid #373737;
 	border-radius:20px;
 	float:left;
 	width:520px;
@@ -89,6 +104,7 @@ body{
 }
 
 .header-mein-info-text{
+	font-size: 16px;
 	color:#fff;
 }
 
@@ -112,6 +128,18 @@ body{
 	padding-right:17px; 
 }
 
+.header-mein-info-vote1{
+	padding-right: 17px;
+	padding-left: 30px;
+}
+
+.header-mein-info-numerals{
+	font-size: 16px;
+	font-style: italic;
+	color:#fff;
+	font-family: Century ;
+}
+
 .header-mein-info{
 	float:right;
 	width:300px;
@@ -126,14 +154,18 @@ body{
 }
 
 .list-text{
-	padding-bottom:15px;
+	text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.6);
+	padding-top: 7px;
+	padding-bottom:7px;
 	margin:0 17px 0 0;
-	border-bottom:1px inset #3b3b3b;
 	font-size:15px;
 	color:#939393;
+	border-bottom: 1px solid #3b3b3b;
 }
 
+
 .list-text-grey{
+	text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.6);
 	font-family: Georgia;
 	font-style: italic;
 	font-size:13px;
@@ -143,6 +175,7 @@ body{
 }
 
 .footer-mein-info-title{
+	font-weight: normal;
 	font-size:15px;
 	color:#ffffff;
 	padding-left:15px;
@@ -155,7 +188,9 @@ body{
 }
 
 .list-text1{
-	padding-bottom: 12px;
+	text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.6);
+	padding-top:5px;
+	padding-bottom: 7px;
 	margin:0 17px 0 0;
 	border-bottom:1px inset #3b3b3b;
 	font-size:15px;
@@ -163,10 +198,9 @@ body{
 }
 
 .info{
-	box-shadow: inset 0 0 2px 0.5px #000;
+	box-shadow: inset 0px 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(255, 255, 255, 0.15);
 	background:rgba(2, 2, 2, 0.15);
 	height:512px;
-	border:1px solid #373737;
 	border-radius:20px;
 	float:right;
 	width:520px;
@@ -183,9 +217,14 @@ body{
 }
 
 .info-text{
-	font-size:15px;
+	text-indent: 30px;
+	font-size:13px;
 	color:#727272;
 	padding:0 5px 0 13px; 
+}
+
+.link-button{
+	margin-top:50px;
 }
 
 .torrent, .sharing, .reel_of_film{
@@ -194,7 +233,7 @@ body{
 	margin:10px 0 0 15px;
 	height: 32px;
 	display: inline-block;
-	box-shadow: 0 0 10px rgba(0,0,0,1);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 	background: linear-gradient( to top, #feba48, #ffefc1);
 	width: 150px;
 	border-radius: 20px;
@@ -230,8 +269,16 @@ body{
 	position: relative;
 }
 
+.title-sckreen-text{
+	vertical-align: middle;
+}
+
+/*.icon{
+	background-image: url(images/lenta.png);
+}
+*/
 .title-sckreen{
-	font-weight: 300;
+	font-weight: normal;
 	padding: 10px 20px 5px 10px ;
 	left:19px;
 	top:5px;
@@ -258,32 +305,34 @@ body{
 	border-radius: 0px 10px 10px 10px;
 }
 
-
-
 .img-botton-left{
-	border-left:1px solid #3a3a3a;
-	padding:3px 0px 3px 3px;
-	background:rgb(51, 51, 51);
+	margin: 10px;
+	border:1px solid #3a3a3a;
 	margin:0;
-	left:0px;
+	left:3px;
 	top:112px;
 	position:absolute;
-	border-radius:20px 0 0 20px; 
+	background:rgb(232, 232, 232);
+	width:30px;
+	height: 30px;
+	border-radius:15px;
+
 }
 
 .img-botton-right{
 	border-right: 1px solid #3a3a3a;
 	top:112px;
-    right: 0px;
-	padding:3px 3px 3px 0px ;
+    right: 3px;
 	position:absolute;
-	background:rgb(51, 51, 51);
+	background:rgb(232, 232, 232);
 	margin:0;
-	border-radius:0px 20px 20px 0px;
-
+	width:30px;
+	height: 30px;
+	border-radius:15px;
 }
 
-.images1_1{box-shadow: 0 0 7px rgba(0,0,0,1);
+.images1_1{
+	box-shadow: 0 0 7px rgba(0,0,0,1);
 	margin:10px 10px 10px 27px;
 }
 
@@ -291,22 +340,26 @@ body{
 	box-shadow: 0 0 7px rgba(0,0,0,1);
 	margin:10px 10px 10px 5px;
 }
+
+.content_treler-comment{
+	margin: 0 auto;
+	width:1050px
+}
 .treler{
-	left:11px;
+	left:19px;
 	top:67px;
 	position: relative;
 	float:left;
-	width:580px;
 }
 
 .title-treler{
-	margin:0;
 	left:0px;
-	top:-35px;
+	top:-34px;
 	position: absolute;
+	float:left;
 	vertical-align: middle;
 	padding:0 20px 0px 15px;
-	font-weight: 300;
+	font-weight: normal;
 	border-right:1px solid #3a3a3a;
 	border-left:1px solid #3a3a3a;
 	border-top:1px solid #3a3a3a;
@@ -317,13 +370,8 @@ body{
 	background:rgb(51, 51, 51);
 }
 
-.img-title-treler{
-	padding-top: 5px;
-}
-
-.text-title-treler{
-	margin-bottom: 5px;
-	padding-left: 8px;
+.title-treler-text{
+	vertical-align: middle;
 }
 
 .video-treler{
@@ -336,28 +384,28 @@ body{
 	margin: 0;
 }
 
-.video{
+.video, .img-comments{
 	padding:20px;
 }	
 
 .comment{
+	right:16px;
 	top:67px;
 	position: relative;
 	margin: 0;
-	width: 400px;
 	float:right;
 }	
 
 .title-comment{
 	padding:0 20px 0 5px;
-	top:-50px;
+	top:-34px;
 	position: absolute;
 	border-right:1px solid #3a3a3a;
 	border-left:1px solid #3a3a3a;
 	border-top:1px solid #3a3a3a;
 	display:inline-block;
 	font-size:15px;
-	font-weight: 300;
+	font-weight: normal;
 	color:#fff;
 	border-radius: 10px 10px 0 0 ;
  	background:rgb(51, 51, 51);
@@ -381,9 +429,6 @@ body{
 	padding-left:15px;
 }
 
-.img-comments{
-	padding: 20px 10px 0 10px;
-}
 
 footer{
 	padding-top:150px;
@@ -424,10 +469,18 @@ footer{
 	right:0px;
 }
 
-.img-footer{
+.img-footer-icon{
+	background-position:10px 10px;
 	top:145px;
 	right:0px;
 	position: absolute;
+	background-image:url(ruletca/sprait.png);
+	}
+
+.icon-arrow{
+	width:8px;
+	height:11px;
+	background-position:40px -50px; 
 }
 
 .text-footer-bottom{
