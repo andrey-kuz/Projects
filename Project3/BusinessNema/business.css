@@ -196,35 +196,35 @@ header{
 	float:right;
 	text-decoration: none;
 	height: 74px;
+	display: inline-block;
 	background: linear-gradient( to bottom right,  #2692d3, #1a5270);
 }
 
-.link-menu{
-	height: 32px;
+.link-menu, .link-menu1{
+	padding-right: 27px;
+	padding-left: 27px;
+	width: 38px;
+	left:13px;
+	top:27px;
+	position: relative;
+	height: 40px;
 	font-size:14px;
-	margin:31px 10px 0 40px;
 	color:#fff;
 	text-decoration: none;
-	display: inline-block;
-}
-
-.link-menu:before{
-	margin: 0;
-	height: 38px;
-	right:25px;
-	position: relative;
-	content: "";
-	border-left:1px solid #000;
-
+	display:inline;
+	
 }
 
 .link-menu:after{
+	top:-10px;
+	left:0px;
+	border-right: 1px solid #4acced;
+	width: 1px;
+	height: 36px;
+	position: absolute;
 	margin: 0;
-	height: 38px;
-	left:25px;
-	position: relative;
 	content:"";
-	border-right:1px solid #fff;
+	background: #011f80;
 }
 	
 .left-info{
