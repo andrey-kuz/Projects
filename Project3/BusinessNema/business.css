@@ -102,13 +102,27 @@ header{
 }
 
 .botton{
-	background-image:url(images/uta_07.png);
+	cursor:pointer;
+	top:7px;
+	position: relative;
+	padding-top: 10px;
+	margin-left: 12px;
+	border-left:0px;
+	border-right: 0px;
+	border-bottom:1px solid #580a1b;
+	border-top:1px solid #ae0000;
+	height: 26px;
+	width:32px;
+	background-color: #830000;
 }
 
 .poisc{
-	height: 34px;
-	width:180px;
-	border:none;
+	height: 26px;
+	width:175px;
+	border-left:0px;
+	border-right:0px;
+	border-bottom:1px solid #1478b2;
+	border-top:1px solid #033969;
 	background: rgba(0, 0, 0, 0.1);
 }
 
