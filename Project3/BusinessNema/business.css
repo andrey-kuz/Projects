@@ -1,12 +1,10 @@
 html {
-	height: 100%;
 }
 
 body {
 	margin: 0;
 	height: 100%;
 	font-family: Trebuchet MS, sans-serif;
-	/*background: #d4e3ee url("images/back_line.jpg") repeat-x;*/
 	background: linear-gradient(to top,  #d4e3ee, #003861) repeat-x;
 }
 
@@ -19,7 +17,7 @@ header{
 .back {
 	margin: auto;
 	width: 1000px;
-	background: url("images/clouds.png") no-repeat;
+	background: url("images/7888888888a.png") no-repeat;
 	background-position: 50% 0;
 	overflow: hidden;
 }
@@ -30,6 +28,17 @@ header{
 	float:left;
 	width: 300px;
 	height: 115px;
+}
+
+.icon{
+	position: absolute;
+	background-image:url(images/21.png);
+}
+
+.icon-camera{
+	width: 10px;
+	height: 13px;
+	background-position: 0px 0px;
 }
 
 .bottom1-header-title{
@@ -145,7 +154,7 @@ header{
 }
 
 .left-side-information{
-	top:260px;
+	top:270px;
 	position: relative;
 	float: left;
 	width:30%;
@@ -379,4 +388,11 @@ table{
 .text-weight{
 	font-weight:bold;
 	color:#37585d;
+}
+
+footer{
+	text-align:center;
+	margin-top: 46px;
+	color:#a7c9cd;
+
 }
