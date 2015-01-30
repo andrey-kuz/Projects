@@ -5,7 +5,7 @@ html{
 
 body{
 	margin: auto;
-	background: url(images/yyyyx_03.png) repeat;
+	background: url(images/ba88_08.png) repeat;
 	font-size:13px;
 	font-family:Century Gothic;	
 }
@@ -20,6 +20,7 @@ body{
 }
 
 .kinoruletca{
+	box-shadow: 0 250px 220px 50px rgba(255, 255, 255, 0.13);
 	margin: 0 auto;
 	width: 1050px;
 	background: url(images/xxx.png) repeat;
@@ -47,10 +48,32 @@ body{
 	float:right;
 }
 
-.button-social-network{
-	border:none;
-	padding-left: 10px;
+.icon{
+	background-repeat: no-repeat;
+	display:inline-block;
+	background-image:url(sprite/icon-sprite.png);
 }
+
+.button-social-network1{
+	margin-right: 18px;
+	background-position:0 0 ;
+	width:21px;
+	height: 20px;
+
+}
+
+.button-social-network2{
+	margin-right: 18px;
+	width:21px;
+	height: 20px;
+	background-position:-22px 0;
+}
+
+.button-social-network3{
+	width: 21px;
+	height: 20px;
+	background-position:-44px 0;
+} 
 
 .ruletca{
 	text-decoration:none;
@@ -94,13 +117,13 @@ body{
 }
 
 .mein-info{
-	box-shadow: inset 0px 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(255, 255, 255, 0.15);
+	box-shadow: inset 1px 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0px 1px rgba(255, 255, 255, 0.15);
 	background:rgba(2, 2, 2, 0.15);
 	height:512px;
 	border-radius:20px;
 	float:left;
 	width:520px;
-	margin:30px 0px 50px 0px;
+	margin:0px 0px 26px 0px;
 }
 
 .header-mein-info-text{
@@ -198,33 +221,72 @@ body{
 }
 
 .info{
-	box-shadow: inset 0px 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(255, 255, 255, 0.15);
+	box-shadow: inset 1px 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0px 1px rgba(255, 255, 255, 0.15);
 	background:rgba(2, 2, 2, 0.15);
 	height:512px;
 	border-radius:20px;
 	float:right;
 	width:520px;
-	margin:30px 0px 50px 0px;
+	margin:0px 0px 26px 0px;
+}
+
+.slapstick{
+	margin: 12px 16px 0 15px;
+	background-position:-94px -22px;
+	width:29px;
+	height:28px;
 }
 
 .info-title{
+	display: inline-block;
+	font-weight: normal;
 	font-size: 16px;
 	color:#ffffff;
 }
 
 .info-title-img{
-	padding:0 12px 0px 13px;
+	padding:0 12px 0px 15px;
 }
 
 .info-text{
+	margin:0;
 	text-indent: 30px;
 	font-size:13px;
 	color:#727272;
-	padding:0 5px 0 13px; 
+	padding:0 5px 33px 17px; 
+}
+
+.info-text3{
+	text-indent: 30px;
+	font-size:13px;
+	color:#727272;
+	margin: 0;
+	padding: 0 5px 0 17px;
 }
 
 .link-button{
-	margin-top:50px;
+	margin-top:20px;
+}
+
+.info-img1{
+	margin:3px 7px 0 8px;
+	background-position:0 -52px;
+	width:24px ;
+	height:24px ;
+}
+
+.info-img2{
+	margin:4px 5px 0 11px;
+	background-position:-25px -52px;
+	width:18px;
+	height:24px;
+}
+
+.info-img3{
+	margin:3px 8px 0 12px;
+	background-position:-44px -52px;
+	width:26px;
+	height: 24px;
 }
 
 .torrent, .sharing, .reel_of_film{
@@ -270,16 +332,14 @@ body{
 }
 
 .title-sckreen-text{
+	position: relative;
+	bottom: 11px;
 	vertical-align: middle;
 }
 
-/*.icon{
-	background-image: url(images/lenta.png);
-}
-*/
 .title-sckreen{
 	font-weight: normal;
-	padding: 10px 20px 5px 10px ;
+	padding: 0px 20px 5px 10px ;
 	left:19px;
 	top:5px;
 	margin:0;
@@ -295,6 +355,13 @@ body{
 	background:rgb(51, 51, 51);
 }
 
+.icon-sckreen-lenta{
+	background-position:0 -22px;
+	width:29px;
+	height:28px;
+	margin:7px 14px 0 17px;
+}
+
 .img-sckreenshot{
 	border:1px solid #3a3a3a;
 	background:rgb(51, 51, 51);
@@ -305,30 +372,70 @@ body{
 	border-radius: 0px 10px 10px 10px;
 }
 
-.img-botton-left{
-	margin: 10px;
-	border:1px solid #3a3a3a;
-	margin:0;
-	left:3px;
-	top:112px;
-	position:absolute;
-	background:rgb(232, 232, 232);
-	width:30px;
-	height: 30px;
-	border-radius:15px;
+.background-button-left{
+	text-decoration: none;
+	background:rgb(51, 51, 51); 
+	box-shadow:  -1px 0 0px 0px rgb(58, 58, 58);
+	border-radius:20px 0 0 20px; 
+	left:2px;
+	top:107px;
+	position: absolute;
+	height: 40px;
+	width:40px; 
 
 }
 
-.img-botton-right{
-	border-right: 1px solid #3a3a3a;
+.img-botton-left{
+	margin:0;
+	left:6px;
 	top:112px;
-    right: 3px;
+	position:absolute;
+	background:rgb(232, 232, 232);
+	width:30px;
+	height: 30px;
+	border-radius:15px;
+}
+
+.arrow-left{
+	top:8px;
+	left:10px;
+	position: relative;
+	background-position: 0 -78px;
+	width:7px;
+	height:11px;
+}
+
+.img-botton-right{
+	top:112px;
+    right: 4px;
 	position:absolute;
 	background:rgb(232, 232, 232);
 	margin:0;
 	width:30px;
 	height: 30px;
 	border-radius:15px;
+}
+
+.background-button-right{
+	box-shadow:1px 0 0px 0px rgb(58, 58, 58);
+	text-decoration: none;
+	background:rgb(51, 51, 51); 
+	border-right:1px solid #3a3a3a;
+	border-radius:0px 20px 20px 0px; 
+	right:1px;
+	top:107px;
+	position: absolute;
+	height: 40px;
+	width:40px; 
+}
+
+.arrow-right{
+	top:8px;
+	left:14px;
+	position: relative;
+	background-position: -10px -78px;
+	width:7px;
+	height:11px;
 }
 
 .images1_1{
@@ -354,12 +461,12 @@ body{
 
 .title-treler{
 	left:0px;
-	top:-34px;
+	top:-39px;
+	height: 39px;
 	position: absolute;
-	float:left;
-	vertical-align: middle;
-	padding:0 20px 0px 15px;
+	padding:0 28px 0px 15px;
 	font-weight: normal;
+	margin: 0;
 	border-right:1px solid #3a3a3a;
 	border-left:1px solid #3a3a3a;
 	border-top:1px solid #3a3a3a;
@@ -370,7 +477,16 @@ body{
 	background:rgb(51, 51, 51);
 }
 
+.icon-camera{
+	margin:7px 13px 0 0;
+	background-position:-30px -21px ;
+	width:28px ;
+	height:28px ;
+}
+
 .title-treler-text{
+	position: relative;
+	bottom:11px;
 	vertical-align: middle;
 }
 
@@ -398,7 +514,8 @@ body{
 
 .title-comment{
 	padding:0 20px 0 5px;
-	top:-34px;
+	margin:0;
+	top:-39px;
 	position: absolute;
 	border-right:1px solid #3a3a3a;
 	border-left:1px solid #3a3a3a;
@@ -407,9 +524,16 @@ body{
 	font-size:15px;
 	font-weight: normal;
 	color:#fff;
+	height: 39px;
 	border-radius: 10px 10px 0 0 ;
  	background:rgb(51, 51, 51);
+}
 
+.icon-comments{
+	margin:7px 14px 0 11px;
+	background-position:-59px -21px;
+	width:34px;
+	height:28px;
 }
 
 .comments{
@@ -422,18 +546,16 @@ body{
 .img-title-comment{
 	padding-top:5px;
 	padding-left:10px;
-
 }
 
-.text-title-comment{
-	padding-left:15px;
+.title-comment-text{
+	position: relative;
+	bottom: 11px;
 }
-
 
 footer{
 	padding-top:150px;
 	z-index: 2;
-	position: relative;
 	overflow: hidden;
 	margin:0 auto;
     width:980px;
@@ -475,12 +597,17 @@ footer{
 	right:0px;
 	position: absolute;
 	background-image:url(ruletca/sprait.png);
-	}
+}
 
 .icon-arrow{
+	top:-4px;
+	right: 0;
+	display: inline-block;
+	position: absolute;
+	cursor:pointer;
+	background-position:-17px -78px;
 	width:8px;
 	height:11px;
-	background-position:40px -50px; 
 }
 
 .text-footer-bottom{

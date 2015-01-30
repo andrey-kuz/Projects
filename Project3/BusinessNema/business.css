@@ -14,6 +14,35 @@ header{
 	margin: 50px auto 0 auto;
 }
 
+.icon{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image:url(sprite/sprait.png);
+}
+
+.icon-arrow-red{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -5px;
+	margin-top: -7px;
+	background-position: 0px 0px;
+	width:10px;
+	height:14px; ;
+}
+
+.icon-arrow-white{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left:-4px;
+	margin-top: -6px;
+	width:10px; 
+	height:14px;
+	background-position: -10px 0;
+
+}
+
 .back {
 	margin: auto;
 	width: 1000px;
@@ -28,17 +57,6 @@ header{
 	float:left;
 	width: 300px;
 	height: 115px;
-}
-
-.icon{
-	position: absolute;
-	background-image:url(images/21.png);
-}
-
-.icon-camera{
-	width: 10px;
-	height: 13px;
-	background-position: 0px 0px;
 }
 
 .bottom1-header-title{
