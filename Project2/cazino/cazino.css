@@ -29,7 +29,6 @@ body{
 
 .header-kinoruletca-img{
 	margin:13px 0 0 0px;
-
 }
 
 .rhombus:after{
@@ -59,7 +58,6 @@ body{
 	background-position:0 0 ;
 	width:21px;
 	height: 20px;
-
 }
 
 .button-social-network2{
@@ -110,7 +108,6 @@ body{
 	padding-left:48px;
 }
 
-
 .content{
 	width: 1050px;
 	margin: auto;
@@ -134,11 +131,9 @@ body{
 .header-mein-info-text1, .header-mein-info-text2{
 	color:#727272;
 	padding-left: 5px;
-
 }
 
 .header-mein-info-text2{
-
 	display: block;
 }
 
@@ -382,7 +377,6 @@ body{
 	position: absolute;
 	height: 40px;
 	width:40px; 
-
 }
 
 .img-botton-left{
