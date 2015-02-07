@@ -171,7 +171,11 @@ header{
 	position: absolute;
 	height: 2px;
 	border-bottom:2px solid #aeaeae;
+}
 
+.rus, .eng, .deu{
+	width: 28px;
+	height: 19px;
 }
 
 .language{
@@ -182,12 +186,16 @@ header{
 }
 
 .link-language{
-	margin-right: 3px;
+		padding:0px 5px 0px 5px;s
+	width:28px;
+	height:19px;
 	color:#acacac;
 	text-decoration: none;
 }
 
 .link-language:hover{
+	width:28px;
+	height:19px;
 	padding:0px 5px 0px 5px;
 	color:#fff;
 	background:#ee4428;
