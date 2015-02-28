@@ -39,6 +39,7 @@ html{
 }
 
 body{
+	min-width: 960px;
 	font-weight:400;
 	font-family:HelveticaNeueCyr, Helvetica, Myriad Pro, sans-serif;
 	margin:0;
@@ -57,7 +58,8 @@ header:before{
 	bottom: 0;
 	position: absolute;
 	background: #e1e4e6;
-	width:1200px;
+	left:50px;
+	right:50px;
 	height: 1px;
 }
 
