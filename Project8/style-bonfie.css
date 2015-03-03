@@ -24,6 +24,7 @@ html{
 }
 
 body{
+	min-width: 1100px;
 	font-family: Myriad Pro, sans-serif;
 	margin: 0;
 }
@@ -34,9 +35,15 @@ body{
 }
 
 .header-block{
+	overflow: hidden;
 	position: relative;
 	width: 940px;
 	margin: auto;
+}
+
+.block-logo{
+	margin-bottom: 16px;
+	float: left;
 }
 
 .logo{
@@ -57,21 +64,30 @@ body{
 	display: inline-block;
 }
 
+.my-account{
+	float: right;
+}
+
 .account-list{
+	padding:0;
+	margin: 32px 52px 0px 0px;
 	vertical-align: middle;
-	margin:3px 0px 30px 140px;
 }
 
 .account-line{
+	display: inline-block;
+}
+
+.account-link{
+	text-decoration: none;
 	margin-right: 8px;
 	font-family:Telegrafico;
 	font-weight: 400;
 	color:#FFF;
 	font-size: 14px;
-	display: inline-block;
 }
 
-.account-line:hover{
+.account-link:hover{
 	color:#000;
 }
 
@@ -110,16 +126,62 @@ body{
 .menu{
 	display: inline-block;
 }
-.menu-block1, .menu-block2, .menu-block3, .menu-block4, .menu-block5, .menu-block6, .menu-block7, .menu-block8{
+.menu-block{
 	display: inline-block;
 	height: 66px;
 	vertical-align: middle;
 	padding-bottom: 4px;
 }
 
-.menu-block1:hover, .menu-block2:hover, .menu-block3:hover, .menu-block4:hover, .menu-block5:hover, .menu-block6:hover, .menu-block7:hover, .menu-block8:hover{
-	padding-bottom: 4px;
+.dropdav{
+	display: none;
+}
+
+.list-dropdav{
+	padding: 0;
+	list-style-type:none;
+}
+
+.line-dropdav{
+	line-height: 36px;
+}
+
+.link-dropdav{
+	margin-left: 7px;
+	font-weight: 300;
+	color:#aaa699;
+	width: 140px;
+	display:inline-block;
+	text-decoration: none;
+	font-family: Dosis-Book;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.link-dropdav:hover{
+	font-size: 14px;
+	width: 140px;
+	display: inline-block;
+	color:#fbf2d3;
+	padding-left: 10px;
+	margin-left: 7px;
+	background: #f54922;
+	border-radius: 13px;
+}
+
+
+.menu-block:hover{
 	background:linear-gradient(to top, #fbf2d3, #f0e4d8);
+}
+
+.menu-block:hover .dropdav{
+	display: block;
+	z-index: 2;
+	position: relative;
+	height: 224px;
+	margin-top:30px;
+	background:#fbf2d3;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .text-menu1{
@@ -166,6 +228,7 @@ body{
 
 .content-search{
 	height: 60px;
+	border-bottom: 5px solid #e7e7e7;
 	background: #f9f9f9;
 }
 
@@ -250,10 +313,6 @@ body{
 	background-position:-32px -54px;
 }
 
-.background-content{
-	background: url(images/02459_11.png) repeat-x;
-	height: 5px;
-}
 
 .content{
 	width: 940px;
@@ -265,7 +324,7 @@ body{
 	height: 66px;
 	background: #91d2d0;
 	background: linear-gradient(to right, #91d2d0, #9bd7d5);
-	margin:-4px auto 0 auto;
+	margin:-6px auto 0 auto;
 	width: 940px;
 	border-bottom: 6px solid #89c8c6;
 }
@@ -304,16 +363,15 @@ body{
 }
 
 .text-line-style{
-	display: inline-block;
 	font-weight: 400;
 	color:#747272;
 	font-family:Telegrafico;
 	font-size: 18px;
-	height: 20px;
 	margin: 50px 0 38px 0;
 }
 
 .line-style{
+	position: relative;
 	width: 940px;
 	margin: auto;
 }
@@ -323,8 +381,9 @@ body{
 	position: absolute;
 	background:url(images/hhh_22.png)repeat-x;
 	height: 10px;
-	margin-left: 3px;
-	width:856px;
+	margin-left: 84px;
+	right:0px;
+	left:0px;
 }
 
 .content-catalog, .content-catalog2{
@@ -401,18 +460,21 @@ body{
 }
 
 .button-catalog{
+	display:block;
 	cursor: pointer;
 	text-shadow:1px 1px 0 #c84323;
 	font-weight: 300;
 	font-family: Dosis-Book;
 	color:#fceded;
+	text-align: center;
 	font-size: 14px;
 	box-shadow: inset 0px 1px 0px 0px #fe7f4c;
 	background: linear-gradient(to top, #e84621, #fd5f37);
 	border:1px solid #c36449;
 	border-radius: 4px;
 	width:109px;
-	height:28px;
+	height:24px;
+	padding-top:4px;
 	margin-left: 8px;
 }
 
@@ -432,9 +494,11 @@ body{
 	position: absolute;
 	background:url(images/hhh_22.png)repeat-x;
 	height: 10px;
-	margin-left:20px;
+	margin-left:70px;
 	margin-top: 5px;
-	width:857px;
+	right: 0px;
+	left:0px;
+
 }
 
 .brands{
@@ -479,7 +543,6 @@ body{
 }
 
 .text-line-style2{
-	display: inline-block;
 	font-weight: 400;
 	color:#747272;
 	font-family:Telegrafico;
@@ -492,8 +555,9 @@ body{
 	position: absolute;
 	background:url(images/hhh_22.png)repeat-x;
 	height: 10px;
-	margin-left: 3px;
-	width:885px;
+	margin-left: 52px;
+	right:0px;
+	left:0px;
 }
 
 .page{
@@ -503,20 +567,7 @@ body{
 	margin-bottom: 195px;
 }
 
-.page-block1{
-	text-align: center;
-	box-shadow: inset 0 1px 0 0 #efefef;
-	border-radius: 3px;
-	width: 31px;
-	height: 28px;
-	border: 1px solid #d7d7d7;
-	background:#e4e4e4;
-	background: linear-gradient(to top, #e0e0e0, #e7e7e7);
-	display: inline-block;
-	margin-right:6px;
-}
-
-.page-block2, .page-block3, .page-block4, .page-block5, .page-block6, .page-block7{
+.page-block{
 	box-shadow: inset 0 1px 0 0 #e6e6e6;
 	font-weight: 300;
 	font-family: Dosis-Book;
@@ -526,43 +577,48 @@ body{
 	color:#545454;
 	margin-right: 6px;
 	text-align: center;
-	position: relative;
-	bottom:-4px;
 	border: 1px solid #c5c5c5;
 	background:#d5d5d5;
 	background: linear-gradient(to top, #cecece, #d9d9d9);
 	display: inline-block;
-	text-shadow:1px 1px 0 #ededed;
 }
 
 .link-page{
+	width: 31px;
+	height: 23px;
+	text-decoration: none;
+	padding-top: 5px;
+	display: inline-block;
+	font-size: 14px;
 	color:#545454;
 }
 
-.page-block2:hover, .page-block3:hover, .page-block4:hover, .page-block5:hover, .page-block6:hover, .page-block1:hover, .page-block7:hover{
-	background: linear-gradient(to top, #e94722, #fd5f37);
+.link-page:hover{
+	width: 31px;
+	height: 23px;
+	text-decoration: none;
+	padding-top: 5px;
+	display: inline-block;
+	font-size: 14px;
 	color:#fceded;
+}
+
+.page-block:hover{
+	color:#fceded;
+	background: linear-gradient(to top, #e94722, #fd5f37);
 	box-shadow: inset 0 1px 0 0 #f97f4c;
 	text-shadow:1px 1px 0px #cc4525;
 	border: 1px solid #e36d4b;
-
-}
-
-.page-number{
-	position: relative;
-	top:3px;
-	font-size: 14px;
 }
 
 .list-page{
-	height: 30px;
 	margin: 0;
 	padding: 0;
 }
 
 .left-arrow-page{
 	position: relative;
-	top:4px;
+	top:0px;
 	background-position: -7px -106px; 
 	width:6px;
 	height:7px;
@@ -571,7 +627,7 @@ body{
 
 .right-arrow-page{
 	position: relative;
-	top:1px;
+	top:0px;
 	background-position: -15px -106px; 
 	width:6px;
 	height:7px;
@@ -589,7 +645,7 @@ body{
 	margin:auto;
 }
 
-.info-block1, .info-block2{
+.info-block{
 	float: left;
 	width: 290px;
 	text-align: justify;
@@ -597,7 +653,7 @@ body{
 	margin-right: 35px;
 }
 
-.info-block3{
+.info-block_addition{
 	float: left;
 	width: 290px;
 	text-align: justify;
@@ -702,19 +758,16 @@ body{
 	list-style-type:none;
 }
 
-.footer-menu-line, .text-footer-menu{
+.footer-link, .text-footer-menu{
 	color:#c9c9c9;
 	font-weight: 300;
 	font-family: Dosis-Book;
 	line-height: 22px;
 	font-size: 14px;
-}
-
-.footer-link{
 	text-decoration: none;
 }
 
-.footer-menu-line:hover{
+.footer-link:hover{
 	color:#0e0e0e;
 }
 

@@ -6,38 +6,53 @@
 	<link type="text/css" rel="stylesheet" href="style-bonfie.css">
 </head>
 <body>
-<header class="page_header">
+<header>
+	<div class="page_header">	
 	<div class="header-block">
+		<div class="block-logo">
 		<a class="link-logo" href="#"><img class="logo" src="images/029_03.png"></a>
 			<span class="text-logo">SO TURN THE LIGHTS OUT</span>
+		</div>	
 		<div class="my-account">
 			<ul class="account-list">
-				<a class="account-link" href="#"><li class="account-line">WISH LIST (0)</li></a>
-				<a class="account-link" href="#"><li class="account-line">MY ACCOUNT</li></a>
-				<a class="account-link" href="#"><li class="account-line">SHOPPING CART</li></a>
-				<a class="account-link" href="#"><li class="account-line">CHECKOUT</li></a>
+				<li class="account-line"><a class="account-link" href="#">WISH LIST (0)</a></li>
+				<li class="account-line"><a class="account-link" href="#">MY ACCOUNT</a></li>
+				<li class="account-line"><a class="account-link" href="#">SHOPPING CART</a></li>
+				<li class="account-line"><a class="account-link" href="#">CHECKOUT</a></li>
 			</ul>
+			<button type="submit" class="icon-sprite button-account"></button>
 		</div>
-		<button type="submit" class="icon-sprite button-account"></button>
 	</div>
-</header>	
+	</div>	
+
 	<div class="content-menu">
 		<div class="content-menu-block">
 			<nav class="menu">
-				<div class="menu-block1"><i class="icon-sprite img-home"></i><a class="menu-link" href="#">
-					<span class="text-menu1">Desktops</span></a>
-				</div>
-				<div class="menu-block2"><a class="menu-link" href="#"><span class="text-menu">Laptops & Notebooks</span></a>
-				</div>
-				<div class="menu-block3"><a class="menu-link" href="#"><span class="text-menu">Components</span></a></div>
-				<div class="menu-block4"><a class="menu-link" href="#"><span class="text-menu">Tablets</span></a></div>
-				<div class="menu-block5"><a class="menu-link" href="#"><span class="text-menu">Software</span></a></div>
-				<div class="menu-block6"><a class="menu-link" href="#"><span class="text-menu">Phones & PDAs</span></a></div>
-				<div class="menu-block7"><a class="menu-link" href="#"><span class="text-menu">Cameras</span></a></div>
-				<div class="menu-block8"><a class="menu-link" href="#"><span class="text-menu">Contact</span></a></div>
+				<a class="menu-link" href="#"><div class="menu-block"><i class="icon-sprite img-home"></i>
+					<span class="text-menu1">Desktops</span>
+				</div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Laptops & Notebooks</span>
+					<div class="dropdav">
+						<ul class="list-dropdav">
+							<li class="line-dropdav"><a class="link-dropdav" href="#">Sony(2)</a></li>
+							<li class="line-dropdav"><a class="link-dropdav" href="#">Android(4)</a></li>
+							<li class="line-dropdav"><a class="link-dropdav" href="#">Apple(7)</a></li>
+							<li class="line-dropdav"><a class="link-dropdav" href="#">Acer(53)</a></li>
+							<li class="line-dropdav"><a class="link-dropdav" href="#">HP(78)</a></li>
+							<li class="line-dropdav"><a class="link-dropdav" href="#">Intel(5)</a></li>
+						</ul>
+						</div>	
+				</div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Components</span></div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Tablets</span></div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Software</span></div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Phones & PDAs</span></div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Cameras</span></div></a>
+				<a class="menu-link" href="#"><div class="menu-block"><span class="text-menu">Contact</span></div></a>
 			</nav>	
 		</div>
 	</div>
+
 	<div class="content-search">
 		<div class="content-search-block">
 			<p class="text-content-search">Welcome visitor you can login or create an account</p>
@@ -48,9 +63,9 @@
 				<input type="text" class="search" name="fullname" placeholder="  Search"/><a class="search-link" href="#"><i class="icon-sprite magnifier"></i></a>
 				</form>
 		</div>
-	</div>	
-	<div class="background-content">
 	</div>
+	</header>	
+
 	<div class="general-content">
 		<div class="content">
 				<img class="img-info-content" src="images/fff_18.png">
@@ -66,22 +81,22 @@
 			<div class="catalog-block1">
 				<img class="img-catalog" src="images/fff_26.jpg">
 				<p class="text-catalog">Mascot Kitty - White</p>
-				<button class="button-catalog">ADD TO CART</button>
+				<a class="button-catalog">ADD TO CART</a>
 			</div>	
 			<div class="catalog-block2">
 				<img class="img-catalog" src="images/fff_28.jpg">
 				<p class="text-catalog">Bite Me</p>
-				<button class="button-catalog">ADD TO CART</button>
+				<a class="button-catalog">ADD TO CART</a>
 			</div>
 			<div class="catalog-block3">
 				<img class="img-catalog" src="images/fff_30.jpg">
 				<p class="text-catalog">Little Fella</p>
-				<button class="button-catalog">ADD TO CART</button>
+				<a class="button-catalog">ADD TO CART</a>
 			</div>		
 			<div class="catalog-block4">
 				<img class="img-catalog" src="images/fff_32.jpg">
 				<p class="text-catalog">Astral Cruise</p>
-				<button class="button-catalog">ADD TO CART</button>
+				<a class="button-catalog">ADD TO CART</a>
 			</div>
 		</div>	
 			<div class="line-style">
@@ -102,61 +117,61 @@
 				<div class="catalog-block1">
 					<img class="img-catalog" src="images/fff_54.jpg">
 					<p class="text-catalog">Symbolic Bag</p>
-					<button class="button-catalog">ADD TO CART</button>
+					<a class="button-catalog">ADD TO CART</a>
 				</div>	
 				<div class="catalog-block2">
 					<img class="img-catalog" src="images/fff_55.jpg">
 					<p class="text-catalog">Interesting Read</p>
-					<button class="button-catalog">ADD TO CART</button>
+					<a class="button-catalog">ADD TO CART</a>
 				</div>
 				<div class="catalog-block3">
 					<img class="img-catalog" src="images/fff_56.jpg">
 					<p class="text-catalog">The Carter</p>
-					<button class="button-catalog">ADD TO CART</button>
+					<a class="button-catalog">ADD TO CART</a>
 				</div>
 				<div class="catalog-block4">
 					<img class="img-catalog" src="images/fff_57.jpg">
 					<p class="text-catalog">Onesie</p>
-					<button class="button-catalog">ADD TO CART</button>
+					<a class="button-catalog">ADD TO CART</a>
 				</div>
 			</div>	
 
 			<div class="page">
 				<ul class="list-page">
-					<a class="link-page" href="#"><li class="page-block1">
-						<i class="icon-sprite left-arrow-page"></i>
-					</li></a>
-					<a class="link-page" href="#"><li class="page-block2">
-						<span class="page-number">1</span>
-					</li></a>
-					<a class="link-page" href="#"><li class="page-block3">
-						<span class="page-number">2</span>
-					</li></a>
-					<a class="link-page" href="#"><li class="page-block4">
-						<span class="page-number">3</span>
-					</li></a>
-					<a class="link-page" href="#"><li class="page-block5">
-						<span class="page-number">4</span>
-					</li></a>
-					<a class="link-page" href="#"><li class="page-block6">
-						<span class="page-number">5</span>
-					</li></a>
-					<a class="link-page" href="#"><li class="page-block7">
-						<i class="icon-sprite right-arrow-page"></i>
-					</li></a>
+					<li class="page-block">
+						<a class="link-page" href="#"><i class="icon-sprite left-arrow-page"></i></a>
+					</li>
+					<li class="page-block">
+						<a class="link-page" href="#">1</a>
+					</li>
+					<li class="page-block">
+						<a class="link-page" href="#">2</a>
+					</li>
+					<li class="page-block">
+						<a class="link-page" href="#">3</a>
+					</li>
+					<li class="page-block">
+						<a class="link-page" href="#">4</a>
+					</li>
+					<li class="page-block">
+						<a class="link-page" href="#">5</a>
+					</li>
+					<li class="page-block">
+						<a class="link-page" href="#"><i class="icon-sprite right-arrow-page"></i></a>
+					</li>
 				</ul>		
 			</div>
 			<div class="content-info">
 				<div class="content-info-block">
-					<div class="info-block1">
+					<div class="info-block">
 						<i class="icon-sprite lamp"></i><h3 class="title-info">Suspendisse sed</h3>
 						<p class="text-info">Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit</p>
 					</div>
-					<div class="info-block2">
+					<div class="info-block">
 						<i class="icon-sprite lightning"></i><h3 class="title-info">Suspendisse sed</h3>
 						<p class="text-info">Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit</p>
 					</div>	
-					<div class="info-block3">
+					<div class="info-block_addition">
 						<i class="icon-sprite button-start"></i><h3 class="title-info">Suspendisse sed</h3>
 						<p class="text-info">Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit</p>
 					</div>
@@ -171,36 +186,36 @@
 					<div class="footer-menu-block2">
 						<h3 class="title-footer-menu">INFORMATION</h3>
 						<ul class="footer-menu-list">
-							<a class="footer-link" href="#"><li class="footer-menu-line">About Us</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Delivery Information</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Privacy Policy</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Terms & Conditions</li></a>
+							<li class="footer-menu-line"><a class="footer-link" href="#">About Us</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Delivery Information</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Privacy Policy</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Terms & Conditions</a></li>
 						</ul>
 					</div>	
 					<div class="footer-menu-block3">
 						<h3 class="title-footer-menu">CUSTOMER SERVICE</h3>	
 						<ul class="footer-menu-list">
-							<a class="footer-link" href="#"><li class="footer-menu-line">Contact Us</li></a> 
-							<a class="footer-link" href="#"><li class="footer-menu-line">Returns</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Site Map</li></a>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Contact Us</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Returns</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Site Map</a></li>
 						</ul>
 					</div>	
 					<div class="footer-menu-block4">
 						<h3 class="title-footer-menu">MY ACCOUNT</h3>
 						<ul class="footer-menu-list">
-							<a class="footer-link" href="#"><li class="footer-menu-line">My Account</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Order History</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Wish List</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Newsletter</li></a>
+							<li class="footer-menu-line"><a class="footer-link" href="#">My Account</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Order History</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Wish List</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Newsletter</a></li>
 						</ul>
 					</div>	
 					<div class="footer-menu-block5">
 						<h3 class="title-footer-menu">EXTRAS</h3>
 						<ul class="footer-menu-list">
-							<a class="footer-link" href="#"><li class="footer-menu-line">Brands</li></a> 
-							<a class="footer-link" href="#"><li class="footer-menu-line">Gift Vouchers</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Affiliates</li></a>
-							<a class="footer-link" href="#"><li class="footer-menu-line">Specials</li></a>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Brands</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Gift Vouchers</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Affiliates</a></li>
+							<li class="footer-menu-line"><a class="footer-link" href="#">Specials</a></li>
 						</ul>
 					</div>
 				</div>
