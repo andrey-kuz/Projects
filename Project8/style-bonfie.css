@@ -18,14 +18,24 @@
 	src:url(font/Dosis-Book/Dosis-Book-webfont.woff2);
 }
 
+@font-face{
+	font-weight: 200;
+	font-family:MyriadPro-Regular;
+	src:url(font/MyriadPro-Regular/MyriadPro-Regular.eot); 
+	src:url(font/MyriadPro-Regular/MyriadPro-Regular.ttf); 
+	src:url(font/MyriadPro-Regular/MyriadPro-Regular.woff); 
+	src:url(font/MyriadPro-Regular/MyriadPro-Regular.svg); 
+	src:url(font/MyriadPro-Regular/MyriadPro-Regular.otf); 
+}
+
 html{
 	width: 100%;
 	height: 100%;
 }
 
 body{
-	min-width: 1100px;
-	font-family: Myriad Pro, sans-serif;
+	min-width: 1010px;
+	font-family: Myriad Pro,  sans-serif;
 	margin: 0;
 }
 
@@ -124,33 +134,35 @@ body{
 }
 
 .menu{
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 }
 .menu-block{
+	position: relative;
+	padding-bottom: 4px;
 	display: inline-block;
 	height: 66px;
-	vertical-align: middle;
-	padding-bottom: 4px;
 }
 
-.dropdav{
+.dropdawn{
 	display: none;
 }
 
-.list-dropdav{
+.line-dropdawn{
+	margin-bottom: 6px;
+}
+
+.list-dropdawn{
 	padding: 0;
+	margin: 0;
 	list-style-type:none;
 }
 
-.line-dropdav{
-	line-height: 36px;
-}
-
-.link-dropdav{
+.link-dropdawn{
 	margin-left: 7px;
 	font-weight: 300;
 	color:#aaa699;
-	width: 140px;
 	display:inline-block;
 	text-decoration: none;
 	font-family: Dosis-Book;
@@ -158,47 +170,35 @@ body{
 	padding-left: 10px;
 }
 
-.link-dropdav:hover{
+.link-dropdawn:hover{
 	font-size: 14px;
 	width: 140px;
-	display: inline-block;
 	color:#fbf2d3;
-	padding-left: 10px;
 	margin-left: 7px;
 	background: #f54922;
 	border-radius: 13px;
 }
 
-
 .menu-block:hover{
 	background:linear-gradient(to top, #fbf2d3, #f0e4d8);
 }
 
-.menu-block:hover .dropdav{
+.menu-block:hover .dropdawn{
+	margin:0;
 	display: block;
-	z-index: 2;
-	position: relative;
-	height: 224px;
-	margin-top:30px;
+	position: absolute;
+	top:100%;
+	min-width: 100%;
 	background:#fbf2d3;
 	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
 }
 
-.text-menu1{
-	font-size: 16px;
-	font-weight: 300;
-	font-family: Dosis-Book;
-	margin-left: 12px;
-	margin-right: 17px;
-	position: relative;
-	top:23px;
-}
-
 .text-menu{
+	width: 100%;
 	font-size: 16px;
 	font-weight: 300;
 	font-family: Dosis-Book;
-	margin-left: 20px;
+	margin-left: 19px;
 	margin-right: 20px;
 	position: relative;
 	top:24px;
@@ -209,6 +209,7 @@ body{
 }
 
 .img-home{
+	margin-right: -10px;
 	top: 24px;
 	position: relative;
 	display: inline-block;
@@ -218,6 +219,8 @@ body{
 }
 
 .menu-link{
+	display: inline-block;
+	height: 70px;
 	color:#918769;
 	text-decoration: none;
 }
@@ -389,57 +392,50 @@ body{
 .content-catalog, .content-catalog2{
 	width: 940px;
 	margin: auto;
+	position: relative;
 }
 
-.catalog-block1, .catalog-block2, .catalog-block3{
+.content-catalog2:after{
+	clear:both;
+	display: block;
+	content:"";
+}
+
+.content-catalog{
+	overflow: hidden;
+}
+
+.catalog-left-arrow{
+	position:absolute;
+	left:-35px;
+	top:100px;
+	width: 35px;
+	height: 37px;
+	background-position:-37px -67px;
+}
+
+.catalog-right-arrow{
+	position:absolute;
+	right:-35px;
+	top:100px;
+	width: 35px;
+	height: 37px;
+	background-position:0px -67px;
+}
+
+figure.catalog-block{
 	float: left;
-	margin-right: 20px;
+	margin:0 0 48px 20px;
 	height: 269px;
 	border-radius: 3px;
-	position: relative;
 	box-shadow: inset 0px 0px 1px 1px #bcbcbc;
 	width: 220px;
 	background: #e1e1e1;
 	background: linear-gradient(to top, #d5d5d5, #f2f2f2):;
-	margin-bottom:48px;
 }
 
-.catalog-block1:before{
-	cursor: pointer;
-	content: "";
-	top:95px;
-	left: -35px;
-	position: absolute;
-	background-position:-37px -67px ;
-	background-image: url(sprite/sprite.png);
-	width: 35px;
-	display: inline-block;
-	height: 37px;
-}
-
-.catalog-block4{
-	position: relative;
-	float: left;
-	margin-bottom:48px;
-	height: 269px;
-	width: 220px;
-	border-radius: 3px;
-	box-shadow: inset 0px 0px 1px 1px #bcbcbc;
-	background: #e1e1e1;
-	background: linear-gradient(to top, #d5d5d5, #f2f2f2);
-}
-
-.catalog-block4:after{
-	content: "";
-	cursor: pointer;
-	top:95px;
-	right: -35px;
-	position: absolute;
-	background-position:0px -67px ;
-	background-image: url(sprite/sprite.png);
-	width: 35px;
-	display: inline-block;
-	height: 37px;
+figure.catalog-block:first-child{
+	margin-left: 0;
 }
 
 .img-catalog{
@@ -461,7 +457,7 @@ body{
 
 .button-catalog{
 	display:block;
-	cursor: pointer;
+	text-decoration: none;
 	text-shadow:1px 1px 0 #c84323;
 	font-weight: 300;
 	font-family: Dosis-Book;
@@ -483,7 +479,8 @@ body{
 }
 
 .text-line-style1{
-	font-family: Myriad Pro;
+	font-weight: 200;
+	font-family:MyriadPro-Regular;
 	font-size: 18px;
 	color:#6d6c6c;
 	margin:0px 0 35px 0;
@@ -506,6 +503,15 @@ body{
 	margin: 0 auto 44px auto;
 	position: relative;
 	height: 66px;
+}
+
+.list-brands{
+	margin: 0;
+	padding: 0;
+}
+
+.line-brands{
+	display: inline-block;
 }
 
 .img-brands1{
@@ -574,7 +580,7 @@ body{
 	border-radius: 3px;
 	width: 31px;
 	height: 28px;
-	color:#545454;
+	color: #545454;
 	margin-right: 6px;
 	text-align: center;
 	border: 1px solid #c5c5c5;
@@ -583,18 +589,33 @@ body{
 	display: inline-block;
 }
 
+.page-active{
+	background: linear-gradient(to top, #e94722, #fd5f37);
+	box-shadow: inset 0 1px 0 0 #f97f4c;
+	text-shadow:1px 1px 0px #cc4525;
+	border: 1px solid #e36d4b;
+}
+
+.page-none-active{
+	box-shadow:inset 0 1px 0 0 #efefef;
+	border:1px solid #dbdbdb;
+	background:linear-gradient(to top, #e0e0e0, #e7e7e7);
+}
+
 .link-page{
+	color:#545454;
 	width: 31px;
 	height: 23px;
+	text-shadow:1px 1px 0 #ededed;
 	text-decoration: none;
 	padding-top: 5px;
 	display: inline-block;
 	font-size: 14px;
-	color:#545454;
 }
 
-.link-page:hover{
+.link-page:hover, .link-page.link-active{
 	width: 31px;
+	text-shadow:1px 1px 0 #cf4928;
 	height: 23px;
 	text-decoration: none;
 	padding-top: 5px;
@@ -618,7 +639,7 @@ body{
 
 .left-arrow-page{
 	position: relative;
-	top:0px;
+	top:-2px;
 	background-position: -7px -106px; 
 	width:6px;
 	height:7px;
@@ -627,7 +648,7 @@ body{
 
 .right-arrow-page{
 	position: relative;
-	top:0px;
+	top:-2px;
 	background-position: -15px -106px; 
 	width:6px;
 	height:7px;
@@ -803,4 +824,46 @@ body{
 
 .text-span{
 	color:#9a9a9a;
+}
+
+.link-ring{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #fff;
+}
+
+.list-ring{
+	display: inline-block;
+	margin:28px 0 0 25px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.line-ring{
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+
+.active{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: rgb(255, 255, 255);
+  border: 3px solid #fff;
+
+}
+
+.link-ring:hover{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background:#fff;
 }
