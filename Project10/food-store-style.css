@@ -50,12 +50,42 @@ body{
 }
 
 .line-language-currency{
+	position: relative;
 	margin: 10px 25px 0 0;
 	display: inline-block;
 }
 
 .line-language-currency:last-child{
 	margin-right: 0;
+}
+
+.dropdawn{
+	display: none;
+}
+
+.list-dropdawn{
+	list-style-type: none;
+	padding: 0;
+}
+
+.link-dropdawn{
+	margin-left: 5px;
+	text-decoration: none;
+}
+
+.link-dropdawn:hover{
+	color:#fff;;
+}
+
+.line-language-currency:hover .dropdawn{
+	display: block;
+	width: 100%;
+	z-index: 2;
+	line-height: 20px;
+	top:130%;
+	background:url(images/background.jpg) repeat;
+	position: absolute;
+
 }
 
 .arrow{
@@ -119,6 +149,7 @@ body{
 }
 
 .menu-and-search{
+	z-index: 1;
 	float: right;
 }
 
@@ -138,9 +169,9 @@ body{
 }
 
 .search{
-	padding: 0;
+	padding: 2px 4px 2px 4px;
 	width: 168px;
-	height: 23px;
+	height: 19px;
 	border: 1px solid #e3ddd9;
 	background: #f9f7ec;
 }
@@ -301,11 +332,11 @@ body{
 }
 
 .search-email{
-	padding: 0;
 	margin: 10px 0 9px 0;
 	font-size: 12px;
 	color:#2c1f18;
-	height: 23px;
+	height: 19px;
+	padding:2px 5px 2px 7px;
 	border:1px solid #e5e5e5;
 	background: #f9f7ec;
 	width: 213px;
