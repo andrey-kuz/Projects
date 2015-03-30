@@ -73,7 +73,7 @@ body{
 	text-decoration: none;
 }
 
-.link-dropdawn:hover{
+.link-dropdawn{
 	color:#fff;;
 }
 
@@ -359,7 +359,7 @@ body{
 
 .facebook{
 	float: right;
-	background-position: 0 -45px;
+	background-position: 0 -49px;
 	width:45px;
 	height: 44px;
 	display: inline-block;
@@ -367,7 +367,7 @@ body{
 
 .twitter{
 	float: right;
-	background-position: -47px -45px;
+	background-position: -47px -49px;
 	width: 45px;
 	height: 44px;
 	display: inline-block;

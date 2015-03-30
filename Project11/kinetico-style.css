@@ -128,8 +128,26 @@ body{
 }
 
 .main-title{
+	position: relative;
 	border-bottom: 1px solid #f0ebe5;
 	background: #fff;
+}
+
+.title::before, .title::after{
+	content:"";
+	position: absolute;
+	 width: 0;
+    height: 0;
+    left:60px; 
+    bottom: -10px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 10px solid #f0ebe5;
+}
+
+.title::after{
+	border-top: 10px solid #fff ;
+	bottom: -9px;
 }
 
 .title{
@@ -161,7 +179,7 @@ body{
 
 #content{
 	float: left;
-	margin: 39px 0 58px 50px;
+	margin: 41px 0 58px 50px;
 	width:620px;
 	box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.26);
 }
@@ -251,6 +269,7 @@ body{
 }
 
 .list-page{
+	float: left;
 	display: inline-block;
 	list-style-type: none;
 	padding: 0;
@@ -287,6 +306,7 @@ body{
 }
 
 .link-arrow{
+	position: relative;
 	display: inline-block;
   	width: 40px;
  	height: 40px
@@ -313,13 +333,23 @@ body{
 .icon-arrow-left{
 	height: 13px;
 	width: 8px;
-	margin: 12px 0 0 15px;
+	margin: auto;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-position: -1px -41px;
 }
 
 .icon-arrow-right{
+	margin: auto;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	height: 13px;
-	margin: 12px 0 0 15px;
 	width: 8px;
 	background-position: -13px -41px;
 }
@@ -423,6 +453,14 @@ body{
 	border-radius: 3px;
 }
 
+.search::-webkit-input-placeholder{
+	color:#a4a4a4;
+	font-size: 15px;
+	font-style: italic;
+	font-family: DroidSerif;
+	font-weight: 300;
+}
+
 .botton{
 	position: absolute;
 	top:13px;
@@ -523,6 +561,7 @@ body{
 }
 
 .circle{
+	position: relative;
 	border-radius: 60%;
 	width: 18px;
 	margin-left: 13px;
@@ -532,14 +571,23 @@ body{
 	box-shadow: inset 0 1px 0 0 #393938;
 }
 
-.circle:hover{
+.circle:after{
+	top:4px;
+	display: none;
+	right: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	content: "";
 	width: 10px;
-	box-shadow:none;
 	height: 10px;
-	padding-left: 1px;
 	border-radius: 50%;
+	position: absolute;
 	background:linear-gradient(to top, #cfd3d3, #fbfbfb);
-	border: 4px solid #7f7f80;
+}
+
+.circle:hover.circle:after{
+	display: block;
 }
 
 #footer{
@@ -623,6 +671,14 @@ body{
 	margin:24px 0 0 0 ;
 	padding: 0;
 	list-style-type: none;
+}
+
+.img-footer{
+	box-shadow: 3px 3px 0 1px rgba(0, 0, 0, 0.17);
+}
+
+.add-list-img{
+	margin-top: 15px;
 }
 
 .tweet{
