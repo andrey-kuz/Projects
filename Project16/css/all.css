@@ -64,6 +64,7 @@ a:link{
 }
 
 body{
+	font: 12px/18px normal normal Arial, Trebuchet MS, Candara, sans-serif;
 	min-width: 1258px;
 }
 
@@ -73,6 +74,12 @@ body{
 
 header{
 	background: #fdfdfd;
+}
+
+header:after{
+	clear: both;
+	display: block;
+	content: "";
 }
 
 .line-header{
@@ -85,7 +92,6 @@ header{
 	margin: 0 auto;
 }
 .navigation{
-	overflow: hidden;
 	position: relative;
 }
 
@@ -107,7 +113,7 @@ header{
 }
 
 .language,.currency{
-	margin: 15px 0 0 34px;
+	margin: 12px 0 0 34px;
 	font-family: DroidSans;
 	font-size: 12px;
 	float: left;
@@ -157,7 +163,7 @@ header{
 }
 
 #nav{
-	margin: 35px 0 0 46px;
+	margin: 32px 0 0 46px;
 	float: left;
 }
 
@@ -178,7 +184,7 @@ header{
 }
 
 .basket{
-	margin: 24px 8px 0 0;
+	margin: 22px 8px 0 0;
 	width: 30px;
 	height: 30px;
 	background-image: url(../images/tools.png);
@@ -192,7 +198,7 @@ header{
 }
 
 .search{
-	margin: 24px 10px 0 0;
+	margin: 22px 10px 0 0;
 	float: right;
 	width: 30px;
 	height: 30px;
@@ -207,9 +213,45 @@ header{
 	font-weight: bold;
 	float: right;
 	color:#898989;
-	margin: 33px 7px 0 0;
+	margin: 29px 7px 0 0;
 }
 
 .search:hover{
 	background-position: -31px 0;
+}
+
+.img-bg{
+	width: 1258px;
+	position: relative;
+	margin: 0 auto;
+	background-image: url(../images/img1.jpg);
+	height: 577px;
+	border-bottom: 2px solid #fe5252;
+}
+
+.img-bg h3{
+	letter-spacing: 0.5px;
+	line-height: 44px;
+	bottom: 155px;
+	font-weight: bold;
+	right: 187px;
+	text-shadow:0px 2px 3px rgba(0, 0, 0, 0.15);
+	font-family: Candara;
+	position: absolute;
+	font-size: 30px;
+	color: #ff5757;
+}
+
+.img-bg p{
+	font-size: 18px;
+	position: absolute;
+	bottom: 99px;
+	right: 180px;
+	line-height: 22px;
+	font-family: DroidSans;
+}
+
+.img-bg span{
+	display: block;
+	margin-left: 91px;
 }
