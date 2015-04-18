@@ -15,7 +15,7 @@
 }
 
 body{
-	min-width: 978px;
+	min-width: 974px;
 	font-family: Georgia;
 	margin:0;
 	background: url(images/background_03.jpg)repeat;
@@ -28,6 +28,11 @@ body{
 	z-index: 1;
 	display: inline-block;
 	margin: 21px 0 0 25px;
+}
+
+#wrapper{
+	overflow: hidden;
+	width: 100%;
 }
 
 .logo-background{
@@ -55,7 +60,7 @@ body{
 .header-block{
 	overflow: hidden;
 	z-index: 2;
-	width: 978px;
+	width: 974px;
 	margin:0 auto 104px auto;
 }
 
@@ -64,7 +69,7 @@ body{
 }
 
 .list-nav{
-	margin: 7px 0 0 0;
+	margin: 9px 37px 0 0;
 	padding: 0;
 	list-style-type: none;
 }
@@ -88,7 +93,8 @@ body{
 }
 
 .text-nav{
-	right: 10px;
+	letter-spacing: 0.5px;
+	right: 7px;
 	bottom: 4px;
 	position: absolute;
 }
@@ -104,7 +110,7 @@ body{
 }
 
 #two-columns{
-	width: 978px;
+	width: 974px;
 	margin:auto;
 }
 
@@ -115,6 +121,7 @@ body{
 }
 
 .title{
+	margin: 0 0 20px 0;
 	color:#ffd200;
 	font-family: GraublauWeb-Bold;
 	font-size: 24px;
@@ -192,6 +199,9 @@ body{
 }
 
 .add-content{
+	line-height: 22px;
+	font-size: 12px;
+	color:#504c41;
 	overflow: hidden;
 	width: 557px;
 	margin: auto;
@@ -330,7 +340,7 @@ th{
 	padding: 2px 3px 4px 15px;
 	margin: 21px 0 0 17px;
 	border:none;
-	width: 203px;
+	width: 185px;
 	height: 28px;
 	border-radius: 8px;
 	background: #504c41;
@@ -493,7 +503,6 @@ th{
 }
 
 .link-item2{
-	width: 260px;
 	height: 30px;
 	font-size: 12px;
 	text-decoration: none;
@@ -523,7 +532,7 @@ th{
 
 .footer-block{
 	overflow: hidden;
-	width: 978px;
+	width: 974px;
 	margin: auto;
 }
 

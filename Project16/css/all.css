@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face{
+	font-family: DroidSans;
+	src:url(../fonts/DroidSans.ttf)format(truetype),
+	url(../fonts/DroidSans.eot)format(embedded-oupentime),
+	url(../fonts/DroidSans.svg)format(svg),
+	url(../fonts/DroidSans.woff)format(woff);
+}
+
+@font-face{
+	font-family: BaroqueScript;
+	src:url(../fonts/BaroqueScript.ttf)format(truetype),
+	url(../fonts/BaroqueScript.eot)format(embedded-oupentime),
+	url(../fonts/BaroqueScript.svg)format(svg),
+	url(../fonts/BaroqueScript.woff)format(woff);
+}
+
+a:link{
+	text-decoration: none;
+}
+
+body{
+	min-width: 1258px;
+}
+
+.wrapper{
+	width: 100%;
+}
+
+header{
+	background: #fdfdfd;
+}
+
+.line-header{
+	height: 2px;
+	background: #fe5252;
+}
+
+.header-block{
+	width: 940px;
+	margin: 0 auto;
+}
+.navigation{
+	overflow: hidden;
+	position: relative;
+}
+
+.navigation:after{
+	content: "";
+	width:100%;
+	margin-left: 33px;
+	height: 1px;
+	position: absolute;
+	display: inline-block;
+	background: #e7e7e7;
+}
+
+.Logo{
+	float: left;
+	width: 140px;
+	height: 94px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.language,.currency{
+	margin: 15px 0 0 34px;
+	font-family: DroidSans;
+	font-size: 12px;
+	float: left;
+	color:#666;
+}
+
+.list-account{
+	float: right;
+}
+
+.block-lenguage,.block-currency{
+	display: inline-block;
+}
+
+.block-lenguage a,.block-currency a{
+	color:#ff5656;
+} 
+
+.block-lenguage a:after,.block-currency a:after{
+	content: "";
+	width: 7px;
+	height: 5px;
+	display: inline-block;
+	position: absolute;
+	margin: 4px 0 0 4px;
+	background-position: -31px -31px;
+	background-image: url(../images/tools.png);
+}
+
+.currency-dropdawn,.language-dropdawn{
+	display: none;
+}
+
+.list-account ul{
+	margin: 12px 11px 0 0;
+}
+
+.list-account li{
+	margin-left: 11px;
+	font-family: DroidSans;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.list-account a{
+	color:#737373;
+}
+
+#nav{
+	margin: 35px 0 0 46px;
+	float: left;
+}
+
+#nav li{
+	margin-right:34px; 
+	display:inline-block;
+	font-family: DroidSans;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#nav a{
+	color:#4b4b4b;
+}
+
+#nav a:hover{
+	color:#ff5959;
+}
+
+.basket{
+	margin: 24px 8px 0 0;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/tools.png);
+	background-position:-62px 0;
+	display: inline-block; 
+	float: right;
+}
+
+.basket:hover{
+	background-position: -93px 0;
+}
+
+.search{
+	margin: 24px 10px 0 0;
+	float: right;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-image: url(../images/tools.png);
+	background-position: 0 0;
+}
+
+.goods{
+	font-size: 13px;
+	font-family: DroidSans;
+	font-weight: bold;
+	float: right;
+	color:#898989;
+	margin: 33px 7px 0 0;
+}
+
+.search:hover{
+	background-position: -31px 0;
+}
