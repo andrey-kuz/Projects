@@ -4,7 +4,7 @@
 	<title>Books</title>
 	<meta hppt-equiv="Content-Type" content="text/html"
 	charset="utf-8">
-	<link type="text/css" rel="stylesheet" href="books-style.css">
+	<link type="text/css" rel="stylesheet" href="css/books-style.css">
 </head>
 
 <body>
@@ -12,11 +12,11 @@
 	<div id="header">
 		<div class="add-header1">
 			<div class="add-header2">
-				<ul class="list-account">
-					<li class="line-account"><a class="link-account" href="#">Sign in</a></li>
-					<li class="line-account"><a class="link-account" href="#">My Account</a></li>
-					<li class="line-account"><a class="link-account" href="#">Order Status</a></li>
-					<li class="line-account"><a class="link-account" href="#">Help</a></li>
+				<ul>
+					<li><a href="#">Sign in</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Order Status</a></li>
+					<li><a href="#">Help</a></li>
 				</ul>
 			</div>	
 		</div>
@@ -27,16 +27,20 @@
 				</div>
 				<form class="search-block">
 					<input type="search" placeholder=""/>
-					<button class="button"><i class="tools icon-search"></i>Search</button>
+					<button class="button"><i class="icon-search"></i>Search</button>
 				</form>
 				<div class="account-block">
 					<div class="purchase">
-						<i class="tools icon-cart"></i><span class="text-purchase">Your cart</span><span class="mark-purchase">(2 items)</span>
-						<span class="text-purchase2">$125.0</span><a class="button1">Checkout</a>
+						<div class="purchase-block">	
+							<i class="icon-cart"></i><span class="text-purchase">Your cart</span><span class="mark-purchase">(2 items)</span>
+						</div>
+						<div class="purchase-block2">
+							<span class="text-purchase2">$125.0</span><a class="button1">Checkout</a>
+						</div>	
 					</div>
 					<div class="wish">
 						<a class="link" href="#">
-						<i class="tools icon-wish"></i>
+						<i class="icon-wish"></i>
 						<span class="text-wish">Wish list</span><span class="mark-wish">20</span>	
 						</a>
 					</div>
@@ -60,53 +64,63 @@
 			</div>	
 			<div class="block">
 				<div class="img-block1">
-					<a href="#" class="link-left"><i class="tools arrow-left"></i></a>
-					<a href="#" class="link-right"><i class="tools arrow-right"></i></a>
-					<img class="img1" src="images/images1.jpg"> 
+					<a href="#" class="link-left">2</a>
+					<a href="#" class="link-right">2</a>
+					<img class="img1" src="images/image1.jpg">
+					<img class="add-img1" src="images/add-image1.png"> 
+					<span class="text1-img1">A Wanted Man </span>
+					<span class="text2-img1">(Jack Reacher #17)</span>
+					<span class="text3-img1">By Lee Child </span>
 				</div>
 				<div class="img-block2">
-					<a href="#"><img class="img2" src="images/images2.jpg"></a>
+					<img class="img2" src="images/image2.jpg">
+					<span class="text1-img2">Deal of the Month</span>
+					<span class="text2-img2">The Human Face of Big Data</span>
+					<img class="add-img2" src="images/add-image2.png">
+					<span class="text3-img2">Save 45% Today</span>
+					<span class="text4-img2">$27.50</span>
+					<button class="button-img">Buy now</button>
 				</div>
 			</div>
 		<div id="two-columns">
 			<div class="aside">
 				<h3 class="title">Categories</h3>
 				<ul class="list-item1">
-					<li class="line-item1"><a class="link-item1" href="#">ALL</a></li>
-					<li class="line-item1"><a class="link-item1" href="#">Fiction & Literature</a></li>
+					<li><a href="#">ALL</a></li>
+					<li><a href="#">Fiction & Literature</a></li>
 				</ul>
 				<ul class="list-item2">
-					<li class="line-item2"><a class="link-item2" href="#">Children</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Science Fiction</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Fantasy</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Mystery</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Romance</a></li>		
-					<li class="line-item2"><a class="link-item2" href="#">Horror</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Poetry</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Literature</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Crime</a></li>
+					<li><a href="#">Children</a></li>
+					<li><a href="#">Science Fiction</a></li>
+					<li><a href="#">Fantasy</a></li>
+					<li><a href="#">Mystery</a></li>
+					<li><a href="#">Romance</a></li>		
+					<li><a href="#">Horror</a></li>
+					<li><a href="#">Poetry</a></li>
+					<li><a href="#">Literature</a></li>
+					<li><a href="#">Crime</a></li>
 				</ul>
-				<p class="line-item1 add-line">Non - Fiction</p>
+				<p>Non - Fiction</p>
 
 				<ul class="list-item2">
-					<li class="line-item2"><a class="link-item2" href="#">Comic</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Cook</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Psychology</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Medical</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Art</a></li>		
-					<li class="line-item2"><a class="link-item2" href="#">Photography</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Law</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">History</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Business</a></li>
-					<li class="line-item2"><a class="link-item2" href="#">Computer</a></li>
+					<li><a href="#">Comic</a></li>
+					<li><a href="#">Cook</a></li>
+					<li><a href="#">Psychology</a></li>
+					<li><a href="#">Medical</a></li>
+					<li><a href="#">Art</a></li>		
+					<li><a href="#">Photography</a></li>
+					<li><a href="#">Law</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Computer</a></li>
 				</ul>
-				<p class="line-item1 add-line">Other</p>
+				<p>Other</p>
 					<ul class="list-item2">
-						<li class="line-item2"><a class="link-item2" href="#">Baby</a></li>
-						<li class="line-item2"><a class="link-item2" href="#">Sex</a></li>
-						<li class="line-item2"><a class="link-item2" href="#">Travel</a></li>
-						<li class="line-item2"><a class="link-item2" href="#">Science</a></li>
-						<li class="line-item2"><a class="link-item2 add-link-item2" href="#">Sports</a></li>		
+						<li><a href="#">Baby</a></li>
+						<li><a href="#">Sex</a></li>
+						<li><a href="#">Travel</a></li>
+						<li><a href="#">Science</a></li>
+						<li><a class="add-link-item2" href="#">Sports</a></li>		
 					</ul>
 			</div>
 
@@ -175,13 +189,13 @@
 							</a>
 						</figcaption>
 						<figcaption class="product">
-							<a class="link-product" href="#"><img class="goots-img" src="images/goots9.jpg">
+							<a class="link-product" href="#"><img class="goots-img" src="images/goots10.jpg">
 								<span class="description">The Immortals of Meluha</span>
 								<span class="price">$152</span>
 							</a>
 						</figcaption>
 						<figcaption class="product">
-							<a class="link-product" href="#"><img class="goots-img" src="images/goots10.jpg">
+							<a class="link-product" href="#"><img class="goots-img" src="images/goots9.jpg">
 								<span class="description">Life Is What You Make It</span>
 								<span class="price">$200</span>
 							</a>
@@ -196,9 +210,6 @@
 						</figcaption>
 						<figcaption class="product">
 							<a class="link-product" href="#"><img class="goots-img" src="images/goots12.jpg">
-								<i class="sale" href="#"><span class="mark-sale1">30%</span>
-									<span class="mark-sale2">Off</span>
-								</i>
 								<span class="description">The war of <span class="description-mark">Art</span></span>
 								<span class="price">$10</span>
 							</a>
@@ -211,6 +222,9 @@
 						</figcaption>
 						<figcaption class="product">
 							<a class="link-product" href="#"><img class="goots-img" src="images/goots14.jpg">
+								<i class="sale" href="#"><span class="mark-sale1">30%</span>
+									<span class="mark-sale2">Off</span>
+								</i>
 								<span class="description">The Immortals of Meluha</span>
 								<span class="price">$300</span>
 							</a>
@@ -224,12 +238,12 @@
 					</figure>
 					<div class="paging">
 						<ul class="list-paging">
-							<li class="line-paging"><a href="#" class="link-paging">1</a></li>
-							<li class="line-paging"><a href="#" class="link-paging">2</a></li>
-							<li class="line-paging"><a href="#" class="link-paging">3</a></li>
-							<li class="line-paging"><a href="#" class="link-paging">4</a></li>
-							<li class="line-paging"><a href="#" class="link-paging">5</a></li>
-							<li class="line-paging"><a href="#" class="link-paging">6</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
 						</ul>
 					</div>		
 				</div>
@@ -239,78 +253,74 @@
 		<div id="footer">
 			<div class="block-footer">
 				<div class="footer-nav">
-					<h3 class="footer-title">Biography & True Stories</h3>
+					<h3>Biography & True Stories</h3>
 					<ul class="list-footer">
-						<li class="line-footer"><a class="link-footer" href="#">General</a></li>						
-						<li class="line-footer"><a class="link-footer" href="#">Diaries, Letters & Journals</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Memoirs</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">True Stories</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Generic Exams</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">GK Titles</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Medical Entrance</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Other Entrance Exams</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">PG Entrance Examinations</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Self-help Titles</a></li>
-						<li class="line-footer add-footer-line"><a class="link-footer" href="#">Sociology</a></li>
+						<li><a href="#">General</a></li>					
+						<li><a href="#">Diaries, Letters & Journals</a></li>
+						<li><a href="#">Memoirs</a></li>
+						<li><a href="#">True Stories</a></li>
+						<li><a href="#">Generic Exams</a></li>
+						<li><a href="#">GK Titles</a></li>
+						<li><a href="#">Medical Entrance</a></li>
+						<li><a href="#">Other Entrance Exams</a></li>
+						<li><a href="#">PG Entrance Examinations</a></li>
+						<li><a href="#">Self-help Titles</a></li>
+						<li class="add-footer-line"><a href="#">Sociology</a></li>
 					</ul>
 				</div>
 				<div class="footer-nav">
-					<h3 class="footer-title">Professional & Reference </h3>
+					<h3>Professional & Reference </h3>
 					<ul class="list-footer">
-						<li class="line-footer"><a class="link-footer" href="#">Academic and Reference</a></li>					
-						<li class="line-footer"><a class="link-footer" href="#">Business Trade</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Engineering and Computer Science</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Humanities, Social Sciences and Languages</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Introduction to Computers</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Science and Maths</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Trade Business</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">English Language & Literature</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">English Language Teaching</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Environment Awareness</a></li>
-						<li class="line-footer add-footer-line"><a class="link-footer" href="#">Environment Protection</a></li>
-					</ul>
-				</div>
-				<div class="footer-nav add-footer-nav">
-					<h3 class="footer-title">Earth Sciences</h3>
-					<ul class="list-footer">
-						<li class="line-footer"><a class="link-footer" href="#">Earth Sciences</a></li>						
-						<li class="line-footer"><a class="link-footer" href="#">Geography</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">The Environment</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Regional & Area Planning</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Fantasy</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Gay</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Humorous</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Interactive</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Legal</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Lesbian</a></li>
-						<li class="line-footer add-footer-line"><a class="link-footer" href="#">Men'S Adventure</a></li>
+						<li><a href="#">Academic and Reference</a></li>					
+						<li><a href="#">Business Trade</a></li>
+						<li><a href="#">Engineering and Computer Science</a></li>
+						<li><a href="#">Humanities, Social Sciences and Languages</a></li>
+						<li><a href="#">Introduction to Computers</a></li>
+						<li><a href="#">Science and Maths</a></li>
+						<li><a href="#">Trade Business</a></li>
+						<li><a href="#">English Language & Literature</a></li>
+						<li><a href="#">English Language Teaching</a></li>
+						<li><a href="#">Environment Awareness</a></li>
+						<li class="add-footer-line"><a href="#">Environment Protection</a></li>
 					</ul>
 				</div>
 				<div class="footer-nav">
-					<h3 class="footer-title">Mathematics</h3>
+					<h3>Earth Sciences</h3>
 					<ul class="list-footer">
-						<li class="line-footer"><a class="link-footer" href="#">Algebra</a></li>						
-						<li class="line-footer"><a class="link-footer" href="#">Differential Equations</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Discrete Mathematics</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Fourier Analysis</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Numerical Analysis</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Probability</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Statistical Methods/data Analysis</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Stochastic And Random Processes</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Topology</a></li>
-						<li class="line-footer"><a class="link-footer" href="#">Statistics</a></li>
-						<li class="line-footer add-footer-line"><a class="link-footer" href="#">Mathematics</a></li>
+						<li><a href="#">Earth Sciences</a></li>						
+						<li><a href="#">Geography</a></li>
+						<li><a href="#">The Environment</a></li>
+						<li><a href="#">Regional & Area Planning</a></li>
+						<li><a href="#">Fantasy</a></li>
+						<li><a href="#">Gay</a></li>
+						<li><a href="#">Humorous</a></li>
+						<li><a href="#">Interactive</a></li>
+						<li><a href="#">Legal</a></li>
+						<li><a href="#">Lesbian</a></li>
+						<li class="add-footer-line"><a class="link-footer" href="#">Men'S Adventure</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav">
+					<h3>Mathematics</h3>
+					<ul class="list-footer">
+						<li><a href="#">Algebra</a></li>						
+						<li><a href="#">Differential Equations</a></li>
+						<li><a href="#">Discrete Mathematics</a></li>
+						<li><a href="#">Fourier Analysis</a></li>
+						<li><a href="#">Numerical Analysis</a></li>
+						<li><a href="#">Probability</a></li>
+						<li><a href="#">Statistical Methods/data Analysis</a></li>
+						<li><a href="#">Stochastic And Random Processes</a></li>
+						<li><a href="#">Topology</a></li>
+						<li><a href="#">Statistics</a></li>
+						<li class="add-footer-line"><a class="link-footer" href="#">Mathematics</a></li>
 					</ul>
 				</div>
 			</div>	
 			<div class="add-footer">	
 				<div class="add-block1">
 					<p class="text-footer1">We accept all major Credit Card/Debit Card/Internet Banking </p>
-					<ul class="list-item">
-						<li class="line-item"><a class="tools cart-bank1" href=""></a></li>
-						<li class="line-item"><a class="tools cart-bank2" href=""></a></li>					
-						<li class="line-item"><a class="tools cart-bank3" href=""></a></li>
-					</ul>
+					<a href="#"><img class="cart" src="images/cart.png"></a>
 				</div>
 				<div class="add-block2">
 					<p class="text-footer2">Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates</p>
